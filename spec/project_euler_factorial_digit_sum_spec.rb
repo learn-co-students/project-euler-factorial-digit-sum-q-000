@@ -7,10 +7,17 @@ describe "#factorial" do
 end
 
 describe "#sum_of_digits" do
-  let(:encrypted_sum) { "NjQ4\n" }
-
   it "returns the sum of the digits of the number passed in" do
     expect(sum_of_digits(16)).to eq(7)
-    expect(Base64.encode64(sum_of_digits(factorial(100)).to_s)).to eq(encrypted_sum)
   end
 end
+
+# Use #factorial and #sum_of_digits as helper methods for #factorial_digit_sum, which takes a number n and returns the sum of the digits of n!.
+describe "#factorial_digit_sum" do
+  let(:encrypted_sum) { "NjQ4\n" }
+
+  it "returns the sum of the digits of the factorial of the number passed in" do
+    expect(Base64.encode64(factorial_digit_sum(100).to_s)).to eq(encrypted_sum)
+  end
+end
+

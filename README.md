@@ -14,11 +14,11 @@ The factorial of a non-negative integer n, denoted by n!, is the product of all 
 
 ## Instructions
 
-- Write a method, factorial_digit_sum, that returns the factorial of the number passed in. It should work for arbitrarily large n (at least up to n = 100).
+- Write a method, factorial, that returns the factorial of the number passed in. It should work for arbitrarily large n (at least up to n = 100).
 
   ### Example
 
-  factorial_digit_sum(4) would return 24:
+  factorial(4) would return 24:
   * 4 * 3 -> 12
   * 4 * 3 * 2 -> 24
   * 4 * 3 * 2 * 1 -> 24

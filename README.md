@@ -1,8 +1,4 @@
----
-tags: euler, problems
-languages: ruby
-resources: 
----
+
 # Project Euler Factorial Digit Sum
 
 ## Factorial

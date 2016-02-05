@@ -9,6 +9,7 @@ end
 describe "#sum_of_digits" do
   it "returns the sum of the digits of the number passed in" do
     expect(sum_of_digits(16)).to eq(7)
+    expect(sum_of_digits(145)).to eq(10)
   end
 end
 

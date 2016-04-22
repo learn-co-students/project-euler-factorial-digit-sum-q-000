@@ -4,9 +4,7 @@ def factorial(number)
 end
 
 def sum_of_digits(number)
-  sum = []
-  number.to_s.chars.each{|str| sum << str.to_i}
-  sum.reduce(:+)
+  number.to_s.chars.map{|str| str.to_i}.reduce(:+)
 end
 
 def factorial_digit_sum(number)
